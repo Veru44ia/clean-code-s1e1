@@ -10,16 +10,19 @@
   display: block;
   text-align: right;
 }
-.description .description-img {
+.description 
+.description-img {
   width: 100%;
 }
-.description .about-matrix {
+.description 
+.about-matrix {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .description { text-align: center;
+  .description { 
+    text-align: center;
   }
 
 }
@@ -40,10 +43,12 @@
   margin: 0;
   padding: 0px;
 }
-.list-item, .heading {
+.list-item, 
+.heading {
   list-style: none;
 }
-.input, .btn{
+.input, 
+.btn{
   outline: none;
 }
 .btn {
@@ -99,52 +104,64 @@
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.list-item > * {
+.list-item > 
+* {
   vertical-align: middle;
 }
 
-.list-item > .checkbox {
+.list-item > 
+.checkbox {
   margin: 0 10px;
 }
-.list-item > .label {
+.list-item > 
+.label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.list-item >    .text-input {
+.list-item >    
+.text-input {
   width: 226px;
 }
-.delete-btn .delete-img {
+.delete-btn 
+.delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete-btn .delete-img:hover {
+.delete-btn 
+.delete-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .label {
+#completed-tasks 
+.label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.tasks-list .list-item .text-input {
+.tasks-list 
+.list-item 
+.text-input {
   display: none;
 }
 
-.tasks-list .list-item.edit-mode .text-input {
+.tasks-list 
+.list-item.edit-mode 
+.text-input {
   display: inline-block;
   width: 224px;
 }
 
-.tasks-list .list-item.edit-mode .label {
+.tasks-list 
+.list-item.edit-mode 
+.label {
   display: none;
 }
