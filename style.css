@@ -10,12 +10,10 @@
   display: block;
   text-align: right;
 }
-.description 
-.description-img {
+.description__img {
   width: 100%;
 }
-.description 
-.about-matrix {
+.description__about-matrix {
   font-family: fantasy, cursive;
 }
 
@@ -26,7 +24,7 @@
   }
 
 }
-.task-list {
+.todo-list {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -36,15 +34,15 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.add-task-section__task-row-wrapper {
   display: flex;
 }
-.tasks-list {
+.task-section__tasks-list {
   margin: 0;
   padding: 0px;
 }
-.list-item, 
-.heading {
+.list__item, 
+.task-section__heading {
   list-style: none;
 }
 .input, 
@@ -64,7 +62,7 @@
   color: #3a3a3a;
 }
 /* Heading */
-.heading,
+.task-section__heading,
 .new-task-label {
   color: #333;
   font-weight: 700;
@@ -100,7 +98,7 @@
 }
 
 /* Task list */
-.list-item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -108,34 +106,34 @@
   justify-content: space-between;
   align-items: center;
 }
-.list-item > 
+.list__item > 
 * {
   vertical-align: middle;
 }
 
-.list-item > 
-.checkbox {
+.list__item > 
+.list__item_checkbox {
   margin: 0 10px;
 }
-.list-item > 
+.list__item > 
 .label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.list-item >    
+.list__item >    
 .text-input {
   width: 226px;
 }
 .delete-btn 
-.delete-img {
+.delete-btn__delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 .delete-btn 
-.delete-img:hover {
+.delete-btn__delete-img:hover {
   transform: rotateZ(0);
 }
 
@@ -147,21 +145,21 @@
 }
 
 /* Edit Task */
-.tasks-list 
-.list-item 
+.task-section__tasks-list 
+.list__item 
 .text-input {
   display: none;
 }
 
-.tasks-list 
-.list-item.edit-mode 
+.task-section__tasks-list 
+.list__item.edit-mode 
 .text-input {
   display: inline-block;
   width: 224px;
 }
 
-.tasks-list 
-.list-item.edit-mode 
+.task-section__tasks-list 
+.list__item.edit-mode 
 .label {
   display: none;
 }
